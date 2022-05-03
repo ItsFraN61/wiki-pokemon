@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="C:/Users/34677/OneDrive/Escritorio/Pokemon/Imágenes/Pokeball.png" type="image/x-icon" rel="shortcut icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="juego.js" type="text/javascript" defer></script>
+    <link href="archivo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="arriba.css">
+</head>
+<BGSOUND SRC=" sonido.mid " LOOP=none></BGSOUND>
+<header class="site-header">
+    <div class="contenedor contenido-header">
+        <div class="barra">
+            <p class="logo">Niantic™</p>
+            <div class="mobile-menu">
+                <a href="#navegacion">
+                    <img src="img/barras.svg" alt="Icono menu">
+                </a>
+            </div>
+            <nav id="navegacion" class="nav">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Juegos</a>
+                <a href="blog.html">Pokemons</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="Entrada.html">Entrada</a>
+                <a href="Pokedex.html">Pokedex</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="C:/Users/34677/OneDrive/Escritorio/Pokemon/Imágenes/poke-shadow.png"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+                <nav class="nav">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Juegos</a>
+                    <a href="blog.html">Pokemons</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="Entrada.html">Entrada</a>
+                    <a href="Pokedex.html">Pokedex</a>
+                </nav>
+                <p class="copyright">Todos Los Derechos Guardados &copy;</p>
+        </div>
+    </footer>
+
+</body>
+</html>

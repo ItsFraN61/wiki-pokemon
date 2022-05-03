@@ -1,0 +1,24 @@
+Amarillo        19 
+Azul            7
+Blanco          18
+Blanco2         17
+Cristal         16
+Esmeralda       6
+Luna            15
+Negro 		14
+Negro2 		5
+Oro 		13
+Perla		3
+Plata 		12
+Platino 	11
+Rojo 		21
+Rubi Omega	2
+Rubi 		23
+Sol 		20
+UltraSol 	9
+Verde 		10
+X 		8
+Y 		4
+Zafiro Alfa 	1
+Zafiro 		22
+Diamante	24

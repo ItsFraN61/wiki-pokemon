@@ -1,0 +1,341 @@
+/* Documento
+   ========================================================================== */
+
+/**
+ * 1. Corregir la línea de altura.
+ * 2. Prevenir las orientacines y los auto-settings de IOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Secciones
+     ========================================================================== */
+  
+  /**
+   * Quitar márgenes de los buscadores de forma prestablecida.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Renderizar mi main de forma adecuada.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Corregir las secciones de H1 en contenido o artículos
+   * de contextos in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Agrupación del contenido
+     ========================================================================== */
+  
+  /**
+   * 1. Poner las celdas bien en Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Corregir las autoescalas.
+   * 2. Corregir los modelados bordeados.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Textos
+     ========================================================================== */
+  
+  /**
+   * Quitar el gris transparente de edge y explorer.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Quitar el borde del botón en Chrome 57-
+   * 2. Añadir decoraciones.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Añadir el peso correcto para buscadores no estándars.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Corregir la autocorrección post-procesado.
+   * 2. COrregir freeze-borders en IE10.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Añadir estilo adecuado para cada buscador.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Contenido añadido
+     ========================================================================== */
+  
+  /**
+   * Quitar bordes de imagenes con liks.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Formas
+     ========================================================================== */
+  
+  /**
+   * 1. Cambiar la letra default.
+   * 2. Quitar el margen en Safari y Firefox.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * ;Mostrar arriba la barra.
+   * 1. Barra de Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Quitar cambios defaults en webs.
+   * 1. Quitar la autotransformación de Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * tonterías del apple.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Quitar bordes de Mozilla.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Retoque de restauración para antiguos settings.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Paddings para Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Corrección text-wrapping.
+   * 2. Correcgir el color.
+   * 3. Quitar los paddgins que no se notan para eficiencia.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Añadir las barras para los sistemas google, opera y mozilla.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Quitar los settings defaults.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Añadir borde.
+   * 2. Quitar límmite del borde.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Corrección del cursor en Google.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Corrección odd en Google.
+   * 2. Corregir aspecto en safari de ventanas.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Retoque de padding en Safari
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. No me funciona en Safari :/.
+   * 2. Cambiar el IOS develop.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Parte Interactiva
+     ========================================================================== */
+  
+  /*
+   * Para cada buscador
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Para adaptación
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Mezcla
+     ========================================================================== */
+  
+  /**
+   * Fuente
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Display
+   */
+  
+  [hidden] {
+    display: none;
+  }
